@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Etec de Itanhaém</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+          <img src="etec_itanhaem.png">
+          <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#home">Fale Conosco</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#home">Admissão</a>
+                </li>
+          </ul>
+
+          <button class="btn-default">
+            Contato
+          </button>
+          <button id="colorChangeBtn" aria-label="Mudar Cores">Mudar Cores</button>
+        </nav>
+    </header>
+    <main id="content">
+      <section id="home">
+          <div id="cta">
+              <h1 class="title">
+                  Vestibulinho
+              </h1>
+              <p class="description">
+                  Prepare-se para o vestibulinho da ETEC de Itanhaém e conquiste seu lugar na educação de qualidade
+              </p>
+          </div>
+  
+          <div id="cta_buttons">
+              <a href="a" class="btn-default">
+                  <i class="fa-solid fa-pen"></i>
+                  Iniciar inscrição
+              </a>
+              <a href="a" class="btn-default">
+                  <i class="fa-solid fa-user"></i>
+                  Área do Candidato
+              </a>
+              <a href="a" class="btn-default">
+                  <i class="fa-solid fa-desktop"></i>
+                  Unidades e Cursos
+              </a>
+          </div>
+          <div class="calendario">
+            <h3 class="calendario-title">Calendário Vestibulinho 2º Semestre 2024</h3>
+            <div class="calendario-info">
+                <p>16/04/2024, a partir das 15h<br>Resultado Recursos Redução</p>
+                <p>05/06/2024, a partir das 15h<br>Divulgação dos locais de Exame (<a href="https://vestibulinhoetec.com.br">vestibulinhoetec.com.br</a>)</p>
+                <p>09/06/2024 às 13h30<br>Exame - Provas do Vestibulinho 2º SEMESTRE 2024</p>
+                <p>12/06/2024, a partir das 15h<br>Divulgação dos gabaritos oficiais</p>
+            </div>
+        </div>
+      </section>
+  </main>
+    <section id="key-benefits">
+    
+      <h2>Saiba mais sobre as Etecs e o Centro Paula Souza</h2>
+      <div class="benefits">
+        <div class="benefit">
+          <p>
+              O centro Paulo Souza é a maior instituição de ensino profissional da América Latina. As escolas técnicas e faculdades de tecnologia que administra estão presentes em todo o Estado.
+          </p>
+        </div>
+        <div class="benefit">
+          <p>
+            Oferecem ensino gratuito de qualidade para estudantes de São Paulo e de todo o Brasil. São mais de 300 cursos oferecidos nas Etecs e Fatecs.
+          </p>
+        </div> 
+        <h3></h3>
+        <div class="benefit">
+          <p>
+             As Etecs estão entre as escolas públicas mais bem avaliadas no enem, Ideb e Pisa. Enquanto as Fatecs tem um ótimo desempenho nas avaliações oficiais do Ministério da Educação.
+          </p>
+        </div>
+      </div>
+    </section>
+  <footer class="rodape custom-rodape">
+    <div class="rodape-container">
+        <div class="right_side">
+          <div id="cta_buttons">
+            <a href="a" class="btn-default">
+              Termos de Uso 
+            </a>
+            <a href="a" class="btn-default">
+              Política de Privacidade
+            </a>
+            <a href="a" class="btn-default">
+             Quem Somos
+            </a>
+        </div>
+        </div>
+        
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+        document.getElementById('btn-saiba-mais').addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        const targetElement = document.querySelector(targetId);
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+  const colorChangeBtn = document.getElementById("colorChangeBtn");
+  const htmlElement = document.querySelector("html");
+
+  colorChangeBtn.addEventListener("click", function() {
+      htmlElement.classList.toggle("color-blind-mode");
+  });
+});
+</script>
+</body>
+</html>

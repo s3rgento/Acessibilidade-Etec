@@ -1,0 +1,170 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-default {
+    background-color: #ff0004; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remova a borda */
+    border-radius: 5px; /* Adicione cantos arredondados */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adicione uma transição suave para a cor de fundo */
+}
+
+section {
+    padding: 28px 8%;
+
+}
+
+/* Benefits section */
+#key-benefits h2 {
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 20px 0; /* Ajuste de padding */
+  font-weight: bold;
+}
+
+  .benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .benefit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-tertiary);
+    max-width: 25%; /* Define a largura máxima para os benefícios */
+    margin: 0 auto; /* Centraliza os benefícios horizontalmente */
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha todo o conteúdo no centro vertical */
+  }
+  
+  #cta {
+    width: 50%; /* Ajuste a largura conforme desejado */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 1%;
+  }
+  
+  #cta_buttons {
+    text-align: center; /* Alinhar os botões ao centro */
+    margin-top: 20px; /* Adicionar um espaço acima dos botões */
+  }
+  
+  .btn-default {
+    display: inline-block; /* Fazer os botões se comportarem como blocos inline */
+    margin-right: 10px; /* Adicionar um espaço entre os botões */
+  }
+  
+  header {
+    width: 100%;
+    padding: 28px 8%;
+    background-color: #f2f2f2; /* Altere a cor de fundo conforme necessário */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicione uma sombra sutil */
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.nav-item a:hover {
+    color: #ff0000; /* Altere a cor quando o mouse passar por cima */
+}
+
+/* Estilo para o calendário */
+.calendario {
+  /* Centraliza horizontalmente */
+  margin: 0 auto;
+  /* Largura fixa */
+  width: 300px;
+  /* Altura fixa */
+  height: 300px;
+  /* Cor de fundo */
+  background-color: #ece3e3;
+  /* Borda arredondada */
+  border-radius: 10px;
+  /* Espaçamento interno */
+  padding: 20px;
+  /* Margem superior para separar do conteúdo acima */
+  margin-top: 50px;
+}
+
+/* Estilo para as informações dentro do calendário */
+.calendario-info {
+  /* Cor do texto */
+  color: #333;
+  /* Texto justificado */
+  text-align: justify;
+}
+
+/* Estilo para o título do calendário */
+.calendario-title {
+  /* Cor do texto */
+  color: #d24848;
+  /* Texto centralizado */
+  text-align: center;
+  /* Margem inferior para separar do conteúdo abaixo */
+  margin-bottom: 20px;
+}
+
+header img {
+    width: 180px; /* Defina a largura desejada */
+    height: auto; /* Mantenha a proporção original */
+}
+
+#imagem img {
+    width: 300px; /* Defina o tamanho desejado em pixels */
+    height: auto; /* Isso mantém a proporção da imagem */
+  }
+  
+/* footer */
+  .custom-rodape {
+    background-color: #f35858;
+    color: rgb(182, 182, 182);
+    padding: 10px;
+}
+
+/* Estilos para o modo de daltonismo */
+.color-blind-mode {
+  /* Exemplo de alteração de cores para daltonismo */
+  background-color: #f0f0f0 !important; /* Fundo cinza claro */
+  color: #333 !important; /* Texto preto */
+}
+
+.color-blind-mode button {
+  background-color: #333 !important; /* Fundo do botão preto */
+  color: #fff !important; /* Texto do botão branco */
+}
+
+.color-blind-mode .btn-default {
+  background-color: #333 !important; /* Fundo do botão preto */
+  color: #fff !important; /* Texto do botão branco */
+}
+  
